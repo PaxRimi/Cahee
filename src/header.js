@@ -5,20 +5,22 @@ import React from "react";
         render(){
             return (
                 <header>
-                    <span>
-                        Cahee
-                    </span>
-                    <nav>
-                        <ul>
-                            <li>HOME</li>
-                            <li>ABOUT</li>
-                            <li>SERVICES</li>
-                            <li>GALLERY</li>
-                            <li>BLOG</li>
-                            <li>CONTACT</li>
-                        </ul>
-                    </nav>
-                    <i className="fas fa-bars"/>
+                    <div className="container">
+                        <span>
+                            Cahee
+                        </span>
+                        <nav>
+                            <ul>
+                                <li>HOME</li>
+                                <li>ABOUT</li>
+                                <li>SERVICES</li>
+                                <li>GALLERY</li>
+                                <li>BLOG</li>
+                                <li>CONTACT</li>
+                            </ul>
+                        </nav>
+                        <i className="fas fa-bars"/>
+                    </div>
                 </header>
             )
         }
