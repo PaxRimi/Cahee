@@ -141,8 +141,84 @@ i{
     height: 250px;
 }
 
+.services{
+    width: 100%;
+    height: 700px;
+    background-color: #70bfff;
+    padding-top: 25px;
+}
 
+.services .container{
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.services_title {
+    width: 200px;
+    height: 270px;
+    background-image: url("./images/tomato.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.services_list li{
+    width: 300px;
+    height: 70px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    list-style: none;
+    position: relative;
+}
+
+.services_list li:hover{
+    background-color: #FF6C00;
+}
+
+.services_list li:before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #9d9d9d;
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+.services_list li a {
+    width: 300px;
+    height: 70px;
+    padding: 0 20px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.services_list li a span{
+    width: 215px;
+    padding-right: 50px;
+}
+
+.services_list li a img{
+    width: 45px;
+    height: 45px;
+}
 
 
 
@@ -193,6 +269,23 @@ i{
         height: 350px;
         margin-right: 15px;
     }
+
+    .services_title{
+        width: 250px;
+        height: 330px;
+        font-size: 50px;
+    }
+
+    .services{
+        height: 500px;
+    }
+
+    .services_list ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -221,5 +314,47 @@ i{
         width: auto;
         height: auto;
         margin-right: 95px;
+    }
+
+    .services{
+        height: 790px;
+    }
+
+    .services .container {
+        flex-direction: row-reverse;
+    }
+
+    .services_title {
+        width: 560px;
+        height: 527px;
+        font-size: 61px;
+        margin-left: 150px;
+        background-position: 100%;
+    }
+
+
+    .services_list ul{
+        flex-direction: column;
+    }
+
+    .services_list li{
+        width: 400px;
+        height: 100px;
+    }
+
+    .services_list li a {
+        font-size: 20px;
+        width: 400px;
+        height: 100px;
+    }
+
+    .services_list li a span{
+        width: 305px;
+        padding-right: 50px;
+    }
+
+    .services_list li a img{
+        width: 55px;
+        height: 55px;
     }
 }
