@@ -3,7 +3,8 @@ import './App.css';
 import Header from "./header";
 import Trial from "./trial";
 import About from "./about";
-import Services from "./services"
+import Services from "./services";
+import Gallery from "./gallery";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Trial/>
         <About/>
         <Services/>
+        <Gallery/>
       </div>
     );
   }
