@@ -421,6 +421,97 @@ i{
     background-color: #A9000C;
 }
 
+.contact{
+    width: 100%;
+    background-image: url("./images/park.png");
+    background-size: cover;
+    background-position: center;
+    padding: 25px 0;
+    color: #262626;
+}
+
+.contact .container{
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.contact h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact .container > p {
+    font-size: 15px;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.contact form{
+    padding: 0 20px;
+}
+
+.contact form input, textarea{
+    width: 100%;
+    background-color: #00c4c4;
+    opacity: 0.5;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 2px solid #00c4c4;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    color: white;
+}
+
+.contact form input {
+    height: 40px;
+}
+
+.contact form textarea{
+    height: 200px;
+    resize: none;
+    padding-top: 20px;
+}
+
+.contact form input:focus, textarea:focus{
+    opacity: 1;
+    border-left: 2px solid #355b82;
+    outline: none;
+}
+
+.contact form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+}
+.contact form ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+}
+.contact form :-ms-input-placeholder { /* IE 10+ */
+    color: white;
+}
+.contact form :-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact .address {
+    padding: 0 20px;
+}
+
+.contact .address p{
+    margin-bottom: 15px;
+}
+
 @media (min-width: 700px) {
     nav{
         display: block;
@@ -559,6 +650,26 @@ i{
         height: 45px;
         width: 150px;
         font-size: 17px;
+    }
+
+    .contact h2{
+        font-size: 65px
+    }
+
+    .contact .container > p {
+        font-size: 17px;
+        width: 342px;
+        line-height: 25px;
+        margin: 30px 0;
+    }
+    .contact .container{
+        background-color: transparent;
+    }
+
+    .contact .container > div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 }
 
@@ -718,5 +829,25 @@ i{
         width: 200px;
         font-size: 20px;
         margin: 20px 0;
+    }
+
+    .contact h2{
+        font-size: 90px;
+    }
+
+    .contact form{
+        width: 540px;
+    }
+
+    .contact form input{
+        height: 50px;
+    }
+
+    .contact form textarea{
+        height: 250px;
+    }
+
+    .contact .address{
+        width: 500px;
     }
 }
