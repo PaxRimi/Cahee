@@ -7,6 +7,7 @@ import Services from "./services";
 import Gallery from "./gallery";
 import Subscription from "./subscription";
 import Blog from "./blog";
+import Contact from "./contact";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <Gallery/>
         <Subscription/>
         <Blog/>
+        <Contact/>
       </div>
     );
   }
