@@ -320,6 +320,107 @@ i{
     background-color: #454e5f;
 }
 
+.blog{
+    width: 100%;
+    background-color: #b07cf7;;
+    padding: 25px 0;
+    color: #fff;
+}
+
+.blog .container{
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.blog .container > p {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.blog_news div{
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.blog_news div span{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #262626;
+    opacity: 0.5;
+    margin: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+}
+
+.blog_news div a{
+    color: white;
+    text-decoration: none;
+}
+
+.blog_news div h3{
+    font-size: 17px;
+    margin: 57px 10px 10px 20px;
+}
+
+.blog_news div p {
+    font-size: 13px;
+    margin: 0 0 10px 20px;
+}
+
+.blog_news div a:hover{
+    text-decoration: underline;
+}
+
+.blog_news1{
+    background-image: url("./images/greenDrink.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.blog_news2{
+    background-image: url("./images/greenSoup.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.blog_news3{
+    background-image: url("./images/raspberryBox.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.blog button{
+    height: 40px;
+    width: 100px;
+    background-color: #f72b3b;
+    border: none;
+    color: white;
+}
+
+.blog button:hover{
+    background-color: #A9000C;
+}
+
 @media (min-width: 700px) {
     nav{
         display: block;
@@ -437,6 +538,27 @@ i{
         height: 30px;
         margin-bottom: 10px;
         padding-left: 10px;
+    }
+
+    .blog .container > p{
+        font-size: 17px;
+        width: 560px;
+    }
+
+    .blog_news div{
+        width: 370px;
+        height: 310px;
+    }
+
+    .blog_news div h3{
+        margin-top: 100px;
+        font-size: 20px;
+    }
+
+    .blog button{
+        height: 45px;
+        width: 150px;
+        font-size: 17px;
     }
 }
 
@@ -575,5 +697,26 @@ i{
         width: 170px;
         height: 55px;
         font-size: 20px;
+    }
+
+    .blog h2{
+        font-size: 90px;
+    }
+
+    .blog .container > p{
+        margin: 30px 0;
+    }
+
+    .blog_news{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .blog button{
+        height: 55px;
+        width: 200px;
+        font-size: 20px;
+        margin: 20px 0;
     }
 }
