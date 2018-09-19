@@ -5,6 +5,7 @@ import Trial from "./trial";
 import About from "./about";
 import Services from "./services";
 import Gallery from "./gallery";
+import Subscription from "./subscription";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <About/>
         <Services/>
         <Gallery/>
+        <Subscription/>
       </div>
     );
   }
