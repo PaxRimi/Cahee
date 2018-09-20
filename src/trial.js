@@ -3,7 +3,7 @@ import React from "react";
 class Trial extends React.Component{
     render(){
         return(
-            <section className="trial">
+            <section className="trial" id="trial">
                 <div className="container">
                     <div className="trial_txt">
                         <h2>

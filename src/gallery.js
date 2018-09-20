@@ -34,7 +34,7 @@ class Gallery extends React.Component{
         </div>;
 
         return(
-            <section className="gallery">
+            <section className="gallery" id="gallery">
                 <div className="container">
                     <h2>
                         Gallery

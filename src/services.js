@@ -7,7 +7,7 @@ import carrot from "./images/carrot.png"
 class Services extends React.Component{
     render(){
         return(
-            <section className="services">
+            <section className="services" id="services">
                 <div className="container">
                     <div className="services_title">
                         <h2>

@@ -4,7 +4,7 @@ class Blog extends React.Component{
 
     render(){
         return(
-            <section className="blog">
+            <section className="blog" id="blog">
                 <div className="container">
                     <h2>
                         Blog

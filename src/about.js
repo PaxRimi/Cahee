@@ -3,7 +3,7 @@ import raspberry from "./images/raspberry_burned.png"
 class About extends React.Component{
     render(){
         return(
-            <section className="about">
+            <section className="about" id="about">
                 <div className="container">
                     <div className="about_txt">
                         <h2>About Us</h2>
