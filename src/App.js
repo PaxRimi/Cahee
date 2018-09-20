@@ -8,6 +8,7 @@ import Gallery from "./gallery";
 import Subscription from "./subscription";
 import Blog from "./blog";
 import Contact from "./contact";
+import Footer from "./footer";
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <Subscription/>
         <Blog/>
         <Contact/>
+        <Footer/>
       </div>
     );
   }
