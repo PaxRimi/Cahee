@@ -15,8 +15,10 @@ import React from "react";
         handleLinkClick = () => {
             let menu = document.querySelector("nav");
 
+
             menu.style.display = "none";
-        };
+            };
+
 
         render(){
             return (
