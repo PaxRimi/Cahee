@@ -14,8 +14,16 @@
 
 header{
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     background-color: #f9f8fb;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+header:hover{
+    opacity: 1;
 }
 
 header .container {
@@ -36,12 +44,16 @@ header span{
 
 nav{
     display: none;
-    margin-top: 50px;
+    margin-top: 10px;
+}
+
+header a{
+    color: #262626;
+    text-decoration: none;
 }
 
 header li{
     list-style: none;
-    color: #262626;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -55,12 +67,16 @@ header li:active{
 
 
 
-i{
+header i{
     width: 50px;
     height: 50px;
     font-size: 35px;
-    text-align: center;
-    line-height: 50px;
+}
+
+header .fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .trial{
@@ -70,6 +86,7 @@ i{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40%;
+    margin-top: 100px;
 }
 
 .trial .container {
@@ -108,7 +125,13 @@ i{
     text-align: center;
     line-height: 55px;
     text-decoration: none;
+    cursor: pointer;
 }
+
+.trial_txt a:hover{
+    background-color: #B22800;
+}
+
 
 .about{
     width: 100%;
@@ -422,6 +445,7 @@ i{
     background-color: #f72b3b;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .blog button:hover{
@@ -521,6 +545,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-transform: uppercase;
     margin-bottom: 15px;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .contact input[type=submit]:hover{
@@ -571,8 +596,13 @@ footer p span {
 }
 
 @media (min-width: 700px) {
+    header .container{
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
     nav{
-        display: block;
+        display: block !important;
         margin-top: 0;
     }
 
@@ -591,7 +621,7 @@ footer p span {
     }
 
     .fa, .fas{
-        display: none;
+        display: none !important;
     }
 
     .trial{
