@@ -53,6 +53,7 @@ class Contact extends React.Component{
                             <input type="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="Your email..." required/>
                             <input type="number" value={this.state.phone} onChange={this.handlePhoneChange} placeholder="Your phone number..." required/>
                             <textarea value={this.state.txt} onChange={this.handelMessageChange} placeholder="Your messge..." required/>
+                            <input type="submit" value="Send Message"/>
                         </form>
                         <div className="address">
                             <h3>
